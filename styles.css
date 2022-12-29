@@ -2,16 +2,16 @@
    margin:0;
    padding:0; 
    box-sizing:border-box;
+   border:1px solid;
 }
 body {
   background: url("transparent1.png") transparent,
-              url("transparent2.png") transparent;
-            
+              url("transparent2.png") transparent;   
 }
 #header{
   display:flex;
   justify-content:space-between;
-  padding:1.5vh;
+  padding:10px;
 }
 
 img{
@@ -23,8 +23,31 @@ img{
   align-items:center;
   width:180px;
   justify-content:space-between;
-
 }
-video{
-  width:100%;
+
+#nav-bar a{
+  text-decoration:none;
+  font-family:dosis,tahoma,sans-serif;
+  font-size:18px;
+  /* color:white; */
+}
+
+.info{
+  width:80%;
+  /* max-width:1200px; see to it */
+  margin:auto;
+}
+
+#title{
+  font-size:50px;
+  font-family:sans-serif;
+}
+#sub-title{
+  font-size:30px;
+}
+#specs-box{
+  display:flex;
+  justify-content:space-between;
+  width:80vw;
+  max-width:1000px;
 }
