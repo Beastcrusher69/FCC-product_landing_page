@@ -22,13 +22,13 @@ body {
 #header{
  display:flex;
  justify-content:space-between;
- padding:20px 30px;;
+ padding:10px 30px;;
  position:top;
 
 }
 
 #tesla-logo{
- height:30px;
+ height:60px;
 }
 
 #nav-bar{
