@@ -1,118 +1,176 @@
 *{
-   margin:0;
-   padding:0; 
-   box-sizing:border-box;
-   /* border:1px solid red; */
+  margin:0;
+  padding:0; 
+  box-sizing:border-box;
+  /* border:1px solid red; */
 }
 body {
-  background:url(https://wallpaper.dog/large/5485721.jpg) ;
-  background-position:center;
-  background-attachment:fixed;
-  background-size:cover;
-  background-repeat:no-repeat;
-  color:white;
-  font-family:sans-serif;
+ background:url(https://wallpaper.dog/large/5485721.jpg) ;
+ background-position:center;
+ background-attachment:fixed;
+ background-size:cover;
+ background-repeat:no-repeat;
+ color:white;
+ font-family:sans-serif;
+ overflow-x:hidden;
 
 }
+
+#gradient-layer{
+   background:linear-gradient(90deg,rgba(0,0,0,0.6),rgba(0,0,0,0.5))
+}
 #header{
-  display:flex;
-  justify-content:space-between;
-  padding:10px 30px;;
-  position:top;
+ display:flex;
+ justify-content:space-between;
+ padding:20px 30px;;
+ position:top;
 
 }
 
 #tesla-logo{
-  height:60px;
+ height:30px;
 }
 
 #nav-bar{
-  display:flex;
-  align-items:center;
-  width:180px;
-  justify-content:space-between;
+ display:flex;
+ align-items:center;
+ width:180px;
+ justify-content:space-between;
 }
 
 #nav-bar a{
-  text-decoration:none;
-  font-family:dosis,tahoma,sans-serif;
-  font-size:18px;
-  color:white;
+ text-decoration:none;
+ font-family:dosis,tahoma,sans-serif;
+ font-size:18px;
+ color:white;
 }
 
 .info{
-  width:90%;
-  margin:90 auto 0;
+ width:90%;
+ margin:90 auto 0;
 }
 
 #title,#sub-title{
-  margin:15px 10%;
+ margin:15px 10%;
 }
 
 #title{
-  font-size:50px;
+ font-size:50px;
 }
 #sub-title{
-  font-size:25px;
-  font-style:italic;
+ font-size:25px;
+ font-style:italic;
 
 }
 #specs-box{
-  margin-top:150;
-  display:flex;
-  justify-content:space-between;
+ margin-top:150;
+ display:flex;
+ justify-content:space-between;
 }
 #specs-wrap{
-  max-width:950px;
-  margin:auto;
+ max-width:950px;
+ margin:auto;
 }
 #specs-list{
-  line-height:45px;
-  margin:50 0;
-  font-size:25px;
-  font-weight:bold;
-  padding: 0 0 0 40px;
+ line-height:45px;
+ margin:50 0;
+ font-size:25px;
+ font-weight:bold;
+ padding: 0 0 0 40px;
 }
 .specs{
-  margin-bottom:20px;
-  width:165px;
-  height:100px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  
+ margin-bottom:20px;
+ width:165px;
+ height:100px;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ 
 }
 
 .big-l{
-  font-size:40px;
-  font-weight:bold;
+ font-size:40px;
+ font-weight:bold;
 
 }
 .small-l{
-  font-size:14px;
+ font-size:14px;
 }
 
 #buy{
-  width:100%;
-  height:100vh;
-  background:linear-gradient(90deg,black,transparent);
-  padding:100px 0 0 60px;
+ width:100%;
+ height:100vh;
+ padding:100px 0 0 60px;
 }
 
+form{
+ width:min(80%,300px);
+ margin:30 0;
+}
 
+.form-text{
+ font-size:25px;
+ margin-bottom:10px;
+}
 
-@media(max-width:905px){
-  #specs-wrap{
-    width:390px;
-  }
-  #specs-box{
-    flex-wrap:wrap;
+#email{
+ width:100%;
+ height:25px;
+ padding:8px;
+ border:none;
+ border-radius:3px;
+}
 
-  }
-  iframe{
-    width:80%;
-    margin:  0 auto;
-  }
+#submit{
+ width:100%;
+ height:35px;
+ margin:20px 0;
+ border-radius:3px;
+ font-size:15px;
+}
+
+iframe{
+ width:500px;
+ height:281px;
 
 }
 
+@media(max-width:905px) and (min-width:405px){
+
+ #specs-wrap{
+   width:390px;
+ }
+ #specs-box{
+   flex-wrap:wrap;
+
+ }
+ iframe{
+   width:400px;
+   height:225px;
+   margin:  0 auto;
+ }
+
+}
+
+@media(max-width:405px){
+
+   #nav-bar{
+     width:155px;
+   }
+
+   #nav-bar a{
+     font-size:14px;
+
+   }
+   #specs-wrap{
+     width:165px;
+   }
+   #specs-box{
+   flex-wrap:wrap;
+   }
+   iframe{
+   width:240px;
+   height:135px;
+   margin: 0 auto;
+ }
+}
