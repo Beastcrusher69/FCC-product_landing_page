@@ -23,11 +23,15 @@ body {
  display:flex;
  justify-content:space-between;
  padding:10px 30px;;
- position:top;
+ position:fixed;
+ width:100%;
+ top:0;
+ left:0;
+ background-color:rgba(63, 68, 73,0.7);
 
 }
 
-#tesla-logo{
+#header-img{
  height:60px;
 }
 
@@ -47,7 +51,7 @@ body {
 
 .info{
  width:90%;
- margin:90 auto 0;
+ margin:150 auto 0;
 }
 
 #title,#sub-title{
@@ -100,7 +104,7 @@ body {
 #buy{
  width:100%;
  height:100vh;
- padding:100px 0 0 60px;
+ padding:100px 0 100px 60px;
 }
 
 form{
@@ -135,6 +139,40 @@ iframe{
 
 }
 
+#contact_us{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ background-color:#3F4449;
+ height:70px;
+ justify-content:space-evenly;
+ color:#B3B7BB;
+ font-size:12px;
+}
+
+
+#social{
+ display:flex;
+ width:150px;
+ justify-content:space-evenly;
+}
+
+#contact_us a{
+ color:#B3B7BB;
+}
+
+
+
+@media(max-width:905px){
+ #buy{
+ padding:100px 30px 60px;
+ }
+
+ #video-box{
+   margin:auto;
+ }
+}
+
 @media(max-width:905px) and (min-width:405px){
 
  #specs-wrap{
@@ -145,7 +183,7 @@ iframe{
 
  }
  iframe{
-   width:400px;
+   width:min(100%,400px);
    height:225px;
    margin:  0 auto;
  }
@@ -153,13 +191,15 @@ iframe{
 }
 
 @media(max-width:405px){
-
+   #header-img{
+     width:30%;
+   }
    #nav-bar{
-     width:155px;
+     width:60%;
    }
 
    #nav-bar a{
-     font-size:14px;
+     font-size:16px;
 
    }
    #specs-wrap{
@@ -169,7 +209,7 @@ iframe{
    flex-wrap:wrap;
    }
    iframe{
-   width:240px;
+   width:100%;
    height:135px;
    margin: 0 auto;
  }
